@@ -1,3 +1,5 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
 
 // wg BEM to jest BLOK
 .site-header {
@@ -11,6 +13,13 @@
         position: absolute;
         width: 100%;
         height: 100%;
+    }
+
+    &__nav {
+        position: absolute;
+        width: 60%;
+        text-align: center;
+        margin-top: $grid-base * 3;
     }
 
     &__h1 {

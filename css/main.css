@@ -148,6 +148,51 @@ a {
   }
 }
 
+.blackout {
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+.nav__item {
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    display: inline-block;
+    width: 23%;
+  }
+}
+.nav__link {
+  color: #eff0f3;
+  padding: 10px;
+  border-radius: 0.4rem;
+  display: block;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+.nav__link:hover {
+  background-color: #74030e;
+}
+
+.heading--h1 {
+  color: #eff0f3;
+  font-size: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .heading--h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .heading--h1 {
+    font-size: 10rem;
+  }
+}
+.heading--h2 {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
 .btn {
   color: #eff0f3;
   border: none;
@@ -186,30 +231,6 @@ a {
   padding: 0;
 }
 
-.heading--h1 {
-  color: #eff0f3;
-  font-size: 6rem;
-}
-@media screen and (min-width: 768px) {
-  .heading--h1 {
-    font-size: 8rem;
-  }
-}
-@media screen and (min-width: 1240px) {
-  .heading--h1 {
-    font-size: 10rem;
-  }
-}
-.heading--h2 {
-  font-size: 5rem;
-  width: 100%;
-  text-align: center;
-}
-
-.blackout {
-  background-color: rgba(0, 0, 0, 0.301);
-}
-
 .site-header {
   background: url(../../assets/img/img/bg_header.jpeg) center/cover fixed;
   height: 100vh;
@@ -219,6 +240,12 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.site-header__nav {
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  margin-top: 30px;
 }
 .site-header__h1 {
   position: absolute;
