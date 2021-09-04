@@ -1,0 +1,7 @@
+@use "../01-settings/" as *;
+
+.site-footer {
+    background-color: $color-bg-footer;
+    color: $color-white;
+    height: 40vh;
+}

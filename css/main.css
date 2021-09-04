@@ -364,6 +364,12 @@ a {
   transform: translate(-50%, -40%);
 }
 
+.site-footer {
+  background-color: #201b13;
+  color: #eff0f3;
+  height: 40vh;
+}
+
 .text-color-white {
   color: #eff0f3;
 }
