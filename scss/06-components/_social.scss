@@ -1,0 +1,58 @@
+@use "../01-settings/" as *;
+
+
+.social {
+
+    width: 200px;
+    height: 83px;
+    background-color: $color-white;
+    border: 1px solid gray;
+    z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 1s ease-in-out;
+
+    &:hover {
+        left: 0;
+    }
+
+    &__item {
+        background: url(../../assets/img/img/sprites_socials.png);
+        width: 43px;
+        height: 42px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+
+        &--facebook {
+            background-position: 0px -1px;
+            &:hover {
+                background-position: 0px -43px;
+            }
+        }
+
+        &--twitter {
+            background-position: -52px -1px;
+            &:hover {
+                background-position: -52px -43px;
+            }
+        }
+
+        &--youtube {
+            background-position: -104px -1px;
+            &:hover {
+                background-position: -104px -43px;
+            }
+        }
+
+        &--in {
+            background-position: -155px -1px;
+            &:hover {
+                background-position: -155px -43px;
+            }
+        }
+    }
+
+}
