@@ -349,6 +349,50 @@ a {
   color: #eff0f3;
 }
 
+.cookies {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  line-height: 2rem;
+  padding: 0.5em;
+  background-color: black;
+  color: #eff0f3;
+  font-size: 2.4rem;
+}
+.cookies__text {
+  width: 70%;
+  text-align: justify;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .cookies__text {
+    width: 90%;
+    text-align: center;
+  }
+}
+.cookies__close {
+  width: 30%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cookies__close {
+    width: 10%;
+  }
+}
+.cookies__close a {
+  text-decoration: none;
+  color: inherit;
+}
+.cookies__close a:hover {
+  color: #74030e;
+}
+
 .site-body__social {
   position: fixed;
   left: -135px;

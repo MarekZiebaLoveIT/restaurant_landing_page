@@ -1,0 +1,49 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+.cookies {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    line-height: 2rem;
+    padding: .5em;
+    background-color: black;
+    color: $color-white;
+    font-size: 2.4rem;
+    
+
+    &__text {
+        width: 70%;
+        text-align: justify;
+        padding: .5rem;
+
+        @include medium {
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    &__close {
+        width: 30%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        text-align: center;
+
+        @include medium {
+            width: 10%;
+        }
+    }
+
+    &__close a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $color2;
+        }
+    }
+}
