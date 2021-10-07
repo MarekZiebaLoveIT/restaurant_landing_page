@@ -1,5 +1,18 @@
 "use strict";
 
+$(function(){
+
+    $('header a').on('click', function(e){
+        e.preventDefault();
+        const goTo = $(this).attr('href');
+        
+        $('html, body').animate({
+            scrollTop: $(goTo).offset().top 
+        }, 1500)
+    });
+});
+
+
 class Cookies {     //poniżej tworzymy metody
 
     constructor() {
